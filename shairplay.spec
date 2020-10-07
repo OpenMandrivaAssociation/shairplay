@@ -19,6 +19,7 @@ Source:		%name-%snap.tar.gz
 
 BuildRequires:	pkgconfig(ao)
 BuildRequires:	pkgconfig(avahi-compat-libdns_sd)
+BuildRequires:  pkgconfig(libdns_sd)
 BuildRequires:  pkgconfig(howl)
 
 Requires:	%{libname} = %{version}-%{release}
