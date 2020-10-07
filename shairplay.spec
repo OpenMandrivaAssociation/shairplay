@@ -2,20 +2,21 @@
 %define libname	%mklibname shairplay %major
 %define devname	%mklibname shairplay -d
 
-%define snap	20160101
-%define rel	3
+%define snap	2018.08.24
+%define rel	1
 
 Summary:	Apple AirPlay server implementation
 Name:		shairplay
 Version:	0.9.0
-Release:	%mkrel 0.git%snap.%rel
+Release:	0.git%snap.%rel
 # library: LGPLv2+
 # application: MIT
 License:	MIT
 Group:		Networking/Other
 URL:		https://github.com/juhovh/shairplay
 # git archive --prefix shairplay-20120111/ master | xz > shairplay-20120111.tar.xz
-Source:		%name-%snap.tar.xz
+Source:		%name-%snap.tar.gz
+
 BuildRequires:	pkgconfig(ao)
 BuildRequires:	pkgconfig(avahi-compat-libdns_sd)
 Requires:	%{libname} = %{version}-%{release}
