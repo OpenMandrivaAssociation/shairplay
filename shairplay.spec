@@ -3,7 +3,7 @@
 %define devname	%mklibname shairplay -d
 
 %define snap	2018.08.24
-%define rel	1
+%define rel	2
 
 Summary:	Apple AirPlay server implementation
 Name:		shairplay
